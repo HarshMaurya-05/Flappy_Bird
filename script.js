@@ -30,7 +30,7 @@ let topPipeImg;
 let bottomPipeImg;
 
 // physics
-let velocityX = -4; // pipes moving left speed
+let velocityX = -2.5; // pipes moving left speed
 let velocityY = 0; // bird jump speed
 let gravity = 0.4; //bird gravity and intial point from where the bird start moving 
 
@@ -159,7 +159,7 @@ function placePipes() {
 function moveBird(e) {
     if (e.code == "Space" || e.code == "ArrowUp" || e.code == "KeyX") {
         // jump
-        velocityY = -6;
+        velocityY = -7.5;
 
         // reset game
         if (gameOver) {
